@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>किसान ज्ञान</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>किसान ज्ञान में आपका स्वागत है</h1>
+    </header>
+    <main>
+        <section>
+            <h2>खेती-बाड़ी की जानकारी</h2>
+            <p>यहाँ आपको मिलेंगी खेती, बीज, खाद, मौसम और सरकारी योजनाओं की जानकारी।</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 किसान ज्ञान</p>
+    </footer>
+</body>
+</html>

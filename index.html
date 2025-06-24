@@ -3,93 +3,55 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kisan Gyan</title>
-  <meta name="description" content="खेती-बाड़ी, सरकारी योजना और खेती के आधुनिक टिप्स की जानकारी हिंदी में।">
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #2e7d32;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    .container {
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    article {
-      background-color: white;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-left: 5px solid #4caf50;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #2e7d32;
-    }
-    footer {
-      background-color: #2e7d32;
-      color: white;
-      text-align: center;
-      padding: 10px;
-    }
-    nav {
-      background-color: #388e3c;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  </style>
+  <title>Kisan Gyan - किसान ज्ञान</title>
+  <meta name="description" content="Kisan Gyan - खेती और किसान से जुड़ी जानकारी हिंदी और English में।">
+  <meta name="keywords" content="kisan, kheti, किसान योजना, kheti tips, indian farmer, agriculture hindi, agriculture english">
+  <meta name="author" content="Kisan Gyan">
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
-
   <header>
-    <h1>किसान ज्ञान</h1>
-    <p>खेती-बाड़ी की नयी तकनीक और सरकारी योजनाएँ</p>
+    <img src="logo.png" alt="Kisan Gyan Logo" class="logo">
+    <h1><span class="lang-hi">किसान ज्ञान</span><span class="lang-en">Kisan Gyan</span></h1>
+    <p><span class="lang-hi">खेती और सरकारी योजनाओं की जानकारी</span><span class="lang-en">Farming and Government Scheme Info</span></p>
+    <button onclick="toggleLanguage()">🌐 हिंदी / English</button>
   </header>
 
   <nav>
-    <a href="#home">होम</a>
-    <a href="#yojna">सरकारी योजनाएँ</a>
-    <a href="#contact">संपर्क करें</a>
+    <a href="#yojna">Yojana</a>
+    <a href="#tips">Tips</a>
+    <a href="#weather">Weather</a>
+    <a href="#contact">Contact</a>
   </nav>
 
-  <div class="container">
-    <article>
-      <h2>✅ टपक सिंचाई का फायदा</h2>
-      <p>टपक सिंचाई से पानी की बचत होती है और फसल को समय पर नमी मिलती है। इससे 40% तक उत्पादन बढ़ता है।</p>
-    </article>
+  <main>
+    <section id="yojna">
+      <h2><span class="lang-hi">🌾 सरकारी योजना</span><span class="lang-en">🌾 Government Scheme</span></h2>
+      <p><span class="lang-hi">प्रधानमंत्री किसान सम्मान निधि योजना से हर किसान को ₹6000 सालाना मिलते हैं।</span>
+      <span class="lang-en">Under PM-KISAN, every farmer gets ₹6000 per year.</span></p>
+    </section>
 
-    <article>
-      <h2>🌾 गेहूं की फसल के लिए उर्वरक योजना</h2>
-      <p>सरकार 50% सब्सिडी पर DAP खाद दे रही है। नजदीकी कृषि केंद्र से संपर्क करें।</p>
-    </article>
+    <section id="tips">
+      <h2><span class="lang-hi">✅ खेती के टिप्स</span><span class="lang-en">✅ Farming Tips</span></h2>
+      <p><span class="lang-hi">टपक सिंचाई से पानी की बचत होती है और उत्पादन बढ़ता है।</span>
+      <span class="lang-en">Drip irrigation saves water and increases yield.</span></p>
+    </section>
 
-    <article>
-      <h2>📢 मक्का की नई किस्म - "BH-203"</h2>
-      <p>इस किस्म से 35 क्विंटल प्रति एकड़ तक उपज मिलती है। पानी और कीट प्रतिरोधी भी है।</p>
-    </article>
+    <section id="weather">
+      <h2><span class="lang-hi">☀️ मौसम जानकारी</span><span class="lang-en">☀️ Weather Info</span></h2>
+      <iframe src="https://weatherwidget.io/w/" width="100%" height="120" style="border:none;"></iframe>
+    </section>
 
-    <article id="yojna">
-      <h2>💰 प्रधानमंत्री किसान सम्मान निधि योजना</h2>
-      <p>हर किसान को ₹6000 सालाना तीन किश्तों में मिलते हैं। आवेदन के लिए <a href="https://pmkisan.gov.in" target="_blank">यहाँ क्लिक करें</a>।</p>
-    </article>
-  </div>
+    <section id="contact">
+      <h2><span class="lang-hi">📬 संपर्क करें</span><span class="lang-en">📬 Contact Us</span></h2>
+      <p>Email: kisangyan@email.com</p>
+      <p><a href="https://forms.gle/YOURFORM" target="_blank">Google Form से संपर्क करें</a></p>
+    </section>
+  </main>
 
-  <footer id="contact">
-    © 2025 किसान ज्ञान | संपर्क करें: kisangyan@email.com
+  <footer>
+    <p>© 2025 <span class="lang-hi">किसान ज्ञान</span><span class="lang-en">Kisan Gyan</span></p>
   </footer>
-
 </body>
 </html>
